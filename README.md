@@ -11,7 +11,7 @@ nix run .#
 ```
 or
 ```
-nix run github:wiltaylor/neovim-flake#.
+nix run github:adam248/neovim-flake#.
 ```
 
 # How to update plugins
