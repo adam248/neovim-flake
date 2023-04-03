@@ -1,5 +1,5 @@
 {
-  description = "Wil Taylor's NeoVim config";
+  description = "Adam Butler's NeoVim config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -155,10 +155,10 @@
       program = "${self.defaultPackage."${sys}"}/bin/nvim";
     });
 
-    defaultPackage = lib.withDefaultSystems (sys: self.packages."${sys}".neovimWT);
+    defaultPackage = lib.withDefaultSystems (sys: self.packages."${sys}".neovimAB);
 
     packages = lib.withDefaultSystems (sys: {
-      neovimWT = mkNeoVimPkg allPkgs."${sys}";
+      neovimAB = mkNeoVimPkg allPkgs."${sys}";
     });
   };
 }
